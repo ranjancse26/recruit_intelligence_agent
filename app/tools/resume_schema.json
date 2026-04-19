@@ -1,0 +1,62 @@
+{
+  "basics": {
+    "name": "",
+    "label": "",
+    "email": "",
+    "phone": "",
+    "url": "",
+    "summary": "",
+    "location": {
+      "address": "",
+      "city": "",
+      "region": "",
+      "postalCode": "",
+      "countryCode": ""
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "name": "",
+      "position": "",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "",
+      "area": "",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "description": "",
+      "highlights": [],
+      "keywords": []
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "languages": [],
+  "interests": [],
+  "references": [],
+  "meta": {}
+}

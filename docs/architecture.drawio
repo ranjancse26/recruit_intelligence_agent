@@ -1,0 +1,219 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram id="backboard-dependencies" name="BackBoard API Dependencies">
+    <mxGraphModel dx="1042" dy="1034" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="arrow9" edge="1" parent="1" source="monitoring" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" target="backboard_client">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow2" edge="1" parent="1" source="routes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" target="resume_tools">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" value="Recruit Intelligence Agent - Architecture" vertex="1">
+          <mxGeometry height="40" width="656" x="180" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" value="FastAPI&amp;nbsp;&lt;br&gt;(main.py)" vertex="1">
+          <mxGeometry height="60" width="220" x="160" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="routes" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="API Routes&#xa;(routes.py)" vertex="1">
+          <mxGeometry height="50" width="220" x="160" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow1" edge="1" parent="1" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" target="routes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="core_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#666666;" value="Core Layer" vertex="1">
+          <mxGeometry height="20" width="80" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="monitoring" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="Monitoring&#xa;(monitoring.py)" vertex="1">
+          <mxGeometry height="50" width="160" x="80" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow_routes_monitoring" edge="1" parent="1" source="routes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" target="monitoring">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="232" y="260" />
+              <mxPoint x="160" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tools_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#666666;" value="Tools Layer" vertex="1">
+          <mxGeometry height="20" width="100" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="resume_tools" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Resume Tools&#xa;(resume_tools.py)" vertex="1">
+          <mxGeometry height="50" width="140" x="80" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="reasoning_tools" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Reasoning Tools&#xa;(reasoning_tools.py)" vertex="1">
+          <mxGeometry height="50" width="140" x="240" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="candidate_websearch" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Candidate Websearch&#xa;(candidate_websearch.py)" vertex="1">
+          <mxGeometry height="50" width="160" x="400" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="jd_generator" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="JD Generator&#xa;(jd_generator.py)" vertex="1">
+          <mxGeometry height="50" width="140" x="580" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow3" edge="1" parent="1" source="routes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" target="reasoning_tools">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow4" edge="1" parent="1" source="routes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" target="candidate_websearch">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow4b" edge="1" parent="1" source="routes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" target="jd_generator">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="services_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#666666;" value="Services Layer" vertex="1">
+          <mxGeometry height="20" width="100" x="40" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="backboard_client" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" value="BackboardClientWrapper&#xa;(backboard_client.py)" vertex="1">
+          <mxGeometry height="50" width="200" x="280" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow5" edge="1" parent="1" source="resume_tools" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" target="backboard_client">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="495" />
+              <mxPoint x="380" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow6" edge="1" parent="1" source="reasoning_tools" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" target="backboard_client">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow7" edge="1" parent="1" source="candidate_websearch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" target="backboard_client">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow8" edge="1" parent="1" source="jd_generator" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" target="backboard_client">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="495" />
+              <mxPoint x="380" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="external_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#666666;" value="External Services" vertex="1">
+          <mxGeometry height="20" width="120" x="40" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="backboard_api" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Backboard API&#xa;(api.backboard.io)" vertex="1">
+          <mxGeometry height="80" width="200" x="280" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow10" edge="1" parent="1" source="backboard_client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;" target="backboard_api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="endpoints_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" value="API Endpoints Used:" vertex="1">
+          <mxGeometry height="20" width="140" x="553" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="endpoint1" parent="1" style="text;html=1;strokeColor=#9673a6;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#666666;" value="POST /assistants" vertex="1">
+          <mxGeometry height="16" width="120" x="553" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="endpoint2" parent="1" style="text;html=1;strokeColor=#9673a6;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#666666;" value="POST /threads" vertex="1">
+          <mxGeometry height="16" width="120" x="553" y="662" as="geometry" />
+        </mxCell>
+        <mxCell id="endpoint3" parent="1" style="text;html=1;strokeColor=#9673a6;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#666666;" value="POST /documents" vertex="1">
+          <mxGeometry height="16" width="120" x="553" y="679" as="geometry" />
+        </mxCell>
+        <mxCell id="endpoint4" parent="1" style="text;html=1;strokeColor=#9673a6;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#666666;" value="GET /documents/{id}" vertex="1">
+          <mxGeometry height="16" width="120" x="553" y="696" as="geometry" />
+        </mxCell>
+        <mxCell id="endpoint5" parent="1" style="text;html=1;strokeColor=#9673a6;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#666666;" value="POST /chat" vertex="1">
+          <mxGeometry height="16" width="120" x="553" y="713" as="geometry" />
+        </mxCell>
+        <mxCell id="config_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#666666;" value="Configuration" vertex="1">
+          <mxGeometry height="20" width="120" x="750" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="env_vars" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" value="Environment Variables&#xa;BACKBOARD_API_KEY&#xa;BACKBOARD_LLM_PROVIDER&#xa;BACKBOARD_MODEL_NAME&#xa;BACKBOARD_TIMEOUT" vertex="1">
+          <mxGeometry height="82" width="180" x="750" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="config_details" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" value="LLM Provider: openai&#xa;Model: gpt-5-mini" vertex="1">
+          <mxGeometry height="40" width="180" x="750" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="deps_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#666666;" value="Python Dependencies" vertex="1">
+          <mxGeometry height="20" width="150" x="750" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="dep1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="• fastapi" vertex="1">
+          <mxGeometry height="16" width="80" x="750" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="dep2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="• uvicorn" vertex="1">
+          <mxGeometry height="16" width="80" x="750" y="307" as="geometry" />
+        </mxCell>
+        <mxCell id="dep3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="• python-multipart" vertex="1">
+          <mxGeometry height="16" width="110" x="750" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="dep4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="• pydantic" vertex="1">
+          <mxGeometry height="16" width="80" x="750" y="341" as="geometry" />
+        </mxCell>
+        <mxCell id="dep5" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="• python-dotenv" vertex="1">
+          <mxGeometry height="16" width="100" x="750" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="dep6" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="• httpx" vertex="1">
+          <mxGeometry height="16" width="80" x="750" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="dep7" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="• backboard-sdk" vertex="1">
+          <mxGeometry height="16" width="100" x="750" y="392" as="geometry" />
+        </mxCell>
+        <mxCell id="dep8" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="• opentelemetry-*" vertex="1">
+          <mxGeometry height="16" width="110" x="750" y="409" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" value="Legend" vertex="1">
+          <mxGeometry height="20" width="60" x="750" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="legend1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="15" width="20" x="750" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="legend1_text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Application" vertex="1">
+          <mxGeometry height="20" width="80" x="775" y="473" as="geometry" />
+        </mxCell>
+        <mxCell id="legend2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry height="15" width="20" x="750" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="legend2_text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Routes" vertex="1">
+          <mxGeometry height="20" width="80" x="775" y="493" as="geometry" />
+        </mxCell>
+        <mxCell id="legend3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="" vertex="1">
+          <mxGeometry height="15" width="20" x="750" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="legend3_text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Tools" vertex="1">
+          <mxGeometry height="20" width="80" x="775" y="513" as="geometry" />
+        </mxCell>
+        <mxCell id="legend4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="15" width="20" x="750" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="legend4_text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Services" vertex="1">
+          <mxGeometry height="20" width="80" x="775" y="533" as="geometry" />
+        </mxCell>
+        <mxCell id="legend5" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#e1d5e7;strokeColor=#9673a6;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="750" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="legend5_text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="External API" vertex="1">
+          <mxGeometry height="20" width="80" x="775" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="legend6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="15" width="20" x="750" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="legend6_text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" value="Core/Monitoring" vertex="1">
+          <mxGeometry height="20" width="100" x="773" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="note" parent="1" style="text;html=1;strokeColor=#999999;fillColor=#fff9e6;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;rounded=1;" value="Note: All tools communicate with Backboard API through BackboardClientWrapper. Core layer provides monitoring, logging, and cost tracking." vertex="1">
+          <mxGeometry height="30" width="632" x="41" y="740" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
