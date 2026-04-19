@@ -202,7 +202,7 @@ curl -X POST http://localhost:8000/jd/analyze-team \
 ## Features
 
 ### Resume Parsing
-Extract structured JSON Resume data from PDF/DOCX files. Maps to standard JSON Resume schema including:
+Extract structured JSON Resume data from Backboard supported files. Maps to standard JSON Resume schema including:
 - Basic info (name, email, phone, location, summary, profiles)
 - Work experience (company, position, dates, highlights)
 - Education (institution, degree, field, dates, courses)
